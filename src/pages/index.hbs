@@ -1,0 +1,82 @@
+<!-- This is a static file -->
+<!-- served from your routes in server.js -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="A cool thing made with Glitch" />
+
+  <title>Change Your Mood!</title>
+
+  <!-- import the webpage's stylesheet -->
+  <link rel="stylesheet" href="/style.css" />
+
+  <!-- import socket.io for communication between connected clients -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.7.2/socket.io.js"></script>
+
+  <!-- import the webpage's client-side javascript file -->
+  <script src="/client.js" defer></script>
+</head>
+
+<body>
+  <main>
+    <div id="container" class="container">
+
+
+      <div id="usernameForm">
+        <form class="usernameForm">
+          <label for="username">What's your name?</label>
+          <input type="text" id="username" name="username" placeholder="Your name" />
+          <button id="usernameSubmit">
+            Submit
+          </button>
+        </form>
+      </div>
+
+
+      <div id="chat">
+        <ul id="chatHistory"></ul>
+
+        <form id="chatForm">
+          <label for="chatText">Type a message:</label>
+          <input type="text" id="chatText" name="chatText" placeholder="Your message" />
+          <button id="chatSubmit">
+            Send Message
+          </button>
+        </form>
+
+      </div>
+
+
+      <div id="grid" class="grid">
+        <!-- Replace the placeholder images with your actual image URLs -->
+        <img class="item" src="/1.png" alt="Image 2">
+        <img class="item" src="/2.png" alt="Image 2">
+        <img class="item" src="/3.png" alt="Image 2">
+        <img class="item" src="/4.png" alt="Image 2">
+        <img class="item" src="/5.png" alt="Image 2">
+        <img class="item" src="/6.png" alt="Image 2">
+        <img class="item" src="/7.png" alt="Image 2">
+
+        <img class="item" src="/1.png" alt="Image 2">
+        <img class="item" src="/2.png" alt="Image 2">
+        <img class="item" src="/3.png" alt="Image 2">
+        <img class="item" src="/4.png" alt="Image 2">
+        <img class="item" src="/5.png" alt="Image 2">
+        <img class="item" src="/6.png" alt="Image 2">
+        <img class="item" src="/7.png" alt="Image 2">
+
+        <!-- Add more images as needed -->
+        <!-- Repeat for a total of 24 images -->
+      </div>
+
+    </div>
+
+
+  </main>
+</body>
+
+</html>
